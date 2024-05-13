@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Haptic Feedback Demo</title>
+</head>
+<body>
+<h1>Welcome to the Haptic Feedback Demo</h1>
+<p>Scan the QR code during the presentation to experience haptic feedback.</p>
+<script>
+  window.onload = function() {
+    if ("vibrate" in navigator) {
+      // Vibrate for a pattern if the device supports the Vibration API
+      navigator.vibrate([100, 50, 100, 50, 200]);
+    } else {
+      console.log("Vibration API not supported on this device.");
+    }
+  };
+</script>
+</body>
+</html>
