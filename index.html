@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HAPPY</title>
+    <title>SOS</title>
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
     <div id="myDIV">
-        <p>HAPPY TOUCH</p>
+        <p>SOS</p>
     </div>
 
     <h1>SHARE TOUCH</h1>
@@ -24,7 +24,7 @@
     <script>
         window.onload = function () {
             if ('vibrate' in navigator) {
-                navigator.vibrate([500, 110, 500, 110, 450, 110, 200, 110, 170, 40, 450, 110, 200, 110, 170, 40, 500]);
+                navigator.vibrate([200, 100, 200, 100, 200, 300, 400, 100, 400, 100, 400, 300, 200, 100, 200, 100, 200]);
             } else {
                 console.log('Vibration API not supported on this device.');
             }
