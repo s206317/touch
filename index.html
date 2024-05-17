@@ -2,29 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SOS</title>
+    <title>HAPPY</title>
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
     <div id="myDIV">
-        <p>SOS</p>
+        <p>YOU GOT A SOS MESSAGE</p>
+        <h1>SOS</h1>
     </div>
 
-    <h1>SHARE TOUCH</h1>
-    <p>BYT TEXTEN ny</p>
-    <!-- Lägg till download attribut i ankartaggar -->
-    <a href="TOUCH.png" download="TOUCH.png">
-        <img src="TOUCH.png" alt="TOUCH" width="300" height="300">
-    </a>
-    <a href="HAPPY.png" download="HAPPY.png">
-        <img src="HAPPY.png" alt="HAPPY" width="300" height="300">
-    </a>
-    <p>BYT TEXTEN ny</p>
+    <h2>SHARE TOUCH</h2>
+    <p>Send a touch message! Download the QR code of the message you want send.</p>
+
+    <div class="image-container">
+        <div class="image-pair">
+            <a href="TOUCH.png" download="TOUCH.png">
+                <img src="TOUCH.png" alt="TOUCH" class="responsive-img">
+            </a>
+            
+            <a href="HAPPY.png" download="HAPPY.png">
+                <img src="HAPPY.png" alt="HAPPY" class="responsive-img">
+            </a>
+           
+        </div>
+        <div class="image-pair">
+            <a href="TOUCH.png" download="TOUCH.png">
+                <img src="TOUCH.png" alt="TOUCH" class="responsive-img">
+            </a>
+            <a href="HAPPY.png" download="HAPPY.png">
+                <img src="HAPPY.png" alt="HAPPY" class="responsive-img">
+            </a>
+        </div>
+    </div>
+
+    <p>FÖRKLARANDE TEXT</p>
 
     <script>
         window.onload = function () {
             if ('vibrate' in navigator) {
-                navigator.vibrate([100, 30, 100, 30, 100, 200, 200, 30, 200, 30, 200, 200, 100, 30, 100, 30, 100]);
+                navigator.vibrate([100, 200, 100, 200, 100]);
             } else {
                 console.log('Vibration API not supported on this device.');
             }
